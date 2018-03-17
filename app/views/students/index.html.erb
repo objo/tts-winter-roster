@@ -1,1 +1,9 @@
-<h1>Holy crap it works</h1>
+<h1>Student List</h1>
+
+<% @students.each do |student| %>
+  <div class="student">
+    <%= image_tag "default_user.png", height: '100px' %>
+    <p><%= student.student_id %></p>
+    <p><%= student.full_name %></p>
+  </div>
+<% end %>
